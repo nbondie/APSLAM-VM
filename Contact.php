@@ -23,20 +23,6 @@ $data=yaml_parse_file('donnée.yaml');
 </header>
 <body>
 
-
-
-<?php
-include_once 'yaml/vendor/autoload.php';
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-
-require "./PHPMailer/src/Exception.php";
-require "./PHPMailer/src/PHPMailer.php";
-require "./PHPMailer/src/SMTP.php";
-
-?>
-
 <div id='contact'>
     <div id='box'>
         <form action="Contact.php" method="post">
@@ -49,7 +35,15 @@ require "./PHPMailer/src/SMTP.php";
 </div>
 
 <?php
- 
+include_once 'yaml/vendor/autoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+require "./PHPMailer/src/Exception.php";
+require "./PHPMailer/src/PHPMailer.php";
+require "./PHPMailer/src/SMTP.php";
+
 if(!empty($_POST)) {
  
     $mail = new PHPMailer(true);
