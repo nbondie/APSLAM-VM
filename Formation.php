@@ -1,5 +1,6 @@
 <?php
 
+require_once("yaml/yaml.php");
 $data=yaml_parse_file('donnée.yaml');
 
 ?>
@@ -23,11 +24,9 @@ $data=yaml_parse_file('donnée.yaml');
 	
 </head>
 <body>
-	<div id='block'>
+	<div id='formation'>
 		<h1 id='titre'>Mes Formations :</h1>
-		<div id='block2'>
-			<h2 id='titre2'>Mes diplomes :</h2>
-			<div class='resultat'>
+			<div id='resultat'>
 				<ul>
 				<?php
 					foreach($data["Formation"] AS $uneFormation){
@@ -46,8 +45,6 @@ $data=yaml_parse_file('donnée.yaml');
 				?>
 				</ul>
 			</div>
-
-		</div>
 	</div>
 </body>
 <footer>
