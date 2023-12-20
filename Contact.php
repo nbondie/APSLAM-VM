@@ -83,8 +83,12 @@ if(!empty($_POST)) {
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = $_POST['subject']??'Subject';
         $mail->Body = $_POST['body']??'This is the HTML message body <b>in bold!</b>';
- 
-        $mail->send();
+        
+        if$captcha=="Succes"){
+            $mail->send();
+        } else{
+            echo "Captchat non validé !";
+        }
         $res= "Le message a bien été envoyer";
     } catch (Exception $e) {
         $res= "Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer";
@@ -109,9 +113,6 @@ if(!empty($_POST)) {
                         <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
                         <button id='boutton' type='submit'>Envoyer le Mail</button>
                       </form>";
-            }
-            if($captcha=="Succes"){
-                echo "Mail Envoyer";
             } ?>
         </form>
     </div>
