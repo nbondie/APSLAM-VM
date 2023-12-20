@@ -1,6 +1,7 @@
 <?php
 $data=yaml_parse_file('donnée.yaml');
 $res='Envoyer un Mail';
+$captcha="Fail" ;
 ?>
 
 
@@ -104,6 +105,7 @@ if(!empty($_POST)) {
             <h3>Le contenu :</h3>
             <textarea class='entrer' name="body"></textarea><br>
             <?php
+            echo $res;
             if($captcha=="Fail"){
                 echo "<form method='POST'>
                         <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
