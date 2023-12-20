@@ -1,6 +1,7 @@
 <?php
 $data=yaml_parse_file('donnée.yaml');
 $res='Envoyer un Mail';
+$captcha="Fail" ;
 ?>
 
 
@@ -115,7 +116,6 @@ if(!empty($_POST)) {
              }
 
             ?>
-            <button id='boutton' type="submit"><?php echo $res ?></button>
         </form>
     </div>
 </div>
