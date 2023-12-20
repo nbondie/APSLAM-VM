@@ -111,11 +111,9 @@ if(!empty($_POST)) {
             <h3>Le contenu :</h3>
             <textarea class='entrer' name="body"></textarea><br>
             <?php
-             if($captcha="Succes"){
+            if($captcha=="Succes"){
                 echo "<button id='boutton' type='submit'>" .$res. "</button>";
-             }
-
-            ?>
+            } ?>
         </form>
     </div>
 </div>
