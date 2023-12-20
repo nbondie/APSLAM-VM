@@ -47,6 +47,9 @@
 
 
 
+
+
+
 #Accueil #titre{
 	margin-top:15vw;
 	font-size:5vw;
@@ -78,6 +81,9 @@
 
 
 
+
+
+
 #APropos #presentation{
 	margin-top:5vw;
 	margin-bottom:5vw;
@@ -105,6 +111,9 @@
 
 
 
+
+
+
 #competence #titre{
 	margin-top: 5vw;
 	margin-left: 10vw;
@@ -116,6 +125,9 @@
 	margin-top: 1vw;
 	margin-left: 25vw;
 }
+
+
+
 
 
 
@@ -145,6 +157,70 @@
 	text-decoration: none;
 	color:blueviolet;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#formation #titre{
+	margin-top: 5vw;
+	margin-left: 10vw;
+	font-size:3vw;
+}
+
+#formation #resultat{
+	font-size: 1.5vw;
+	margin-top: 1vw;
+	margin-left: 25vw;
+}
+
+
+
+
+
+#contact{
+	margin-top: 5ch;
+	margin-left: 30vw;
+	margin-right: 30vw;
+	margin-bottom: 5vw;
+	padding: 5vw;
+	background-color: blueviolet;
+	border-radius: 2vw;
+}
+
+#contact #box{
+	border: 0.2vw solid black;
+	border-radius: 1vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2vw;
+}
+
+#contact .entrer{
+	border-radius: 0.5vw;
+	margin: 0.5vw;
+	padding: 1vw;
+	width: 20vw;
+}
+
+#contact #boutton{
+	border-radius: 0.5vw;
+	margin: 0.5vw;
+	padding: 1vw;
+	width: 20vw;
+}
+
 
 
 
