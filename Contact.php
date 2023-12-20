@@ -26,10 +26,32 @@ $res='Envoyer un Mail';
 
     <title>reCAPTCHA demo: Simple page</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <?php
+    require_once '/reCaptcha/autoload.php';
+    if(isset($_POST['OK'])){
+        $recaptcha = new \ReCaptcha\ReCaptcha("6Ld-9zcpAAAAAAm0DXEl56Z_mwrFL2srdSnuAq3J");
+
+        $gRecaptchaResponse = $_POST['g-recaptcha-response'];
+
+        $resp = $recaptcha->setExpectedHostname('srv1-vm-1126.sts-sio-caen.info')
+                  ->setExpectedAction('homepage')
+                  ->setScoreThreshold(0.5)
+                  ->verify($gRecaptchaResponse, $remoteIp);
+
+        if ($resp->isSuccess()) {
+            echo "Succes !";
+        } else {
+            $errors = $resp->getErrorCodes();
+            var_dump($error);
+        }
+    }
+
+    ?>
     <form action="?" method="POST">
       <div class="g-recaptcha" data-sitekey="6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d"></div>
       <br/>
-      <input type="submit" name="ok" value="Submit">
+      <input type="submit" name="OK" value="Submit">
     </form>
 
 
