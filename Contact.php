@@ -38,7 +38,6 @@ $captcha="Fail" ;
                   ->verify($gRecaptchaResponse, $remoteIp);
 
         if ($resp->isSuccess()) {
-            echo "Succes !";
             $captcha = "Succes";
         } else {
             $errors = $resp->getErrorCodes();
@@ -48,11 +47,6 @@ $captcha="Fail" ;
     }
 
     ?>
-    <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d"></div>
-      <br/>
-      <input type="submit" name="OK" value="Submit">
-    </form>
 
 
 
@@ -111,6 +105,12 @@ if(!empty($_POST)) {
             <h3>Le contenu :</h3>
             <textarea class='entrer' name="body"></textarea><br>
             <?php
+            if($captcha=="Fail"){
+                echo "<form method='POST'>
+                        <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
+                        <input type='submit' name='OK' value='Submit'>
+                      </form>"
+            }
             if($captcha=="Succes"){
                 echo "<button id='boutton' type='submit'>" .$res. "</button>";
             } ?>
