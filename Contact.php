@@ -84,13 +84,12 @@ if(!empty($_POST)) {
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = $_POST['subject']??'Subject';
         $mail->Body = $_POST['body']??'This is the HTML message body <b>in bold!</b>';
-        
+        $res= "Le message a bien été envoyer";
         if ($captcha=="Succes"){
             $mail->send();
         } else{
             $res= "Captchat non validé !";
         }
-        $res= "Le message a bien été envoyer";
     } catch (Exception $e) {
         $res= "Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer";
     }
