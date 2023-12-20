@@ -1,5 +1,6 @@
 <?php
 $data=yaml_parse_file('donnée.yaml');
+$res="Envoyer un Mail";
 $captcha="Fail" ;
 ?>
 
@@ -110,7 +111,7 @@ if(!empty($_POST)) {
             <?php
             echo "<form method='POST'>
                     <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
-                    <button id='boutton' name='OK' type='submit'>Envoyer le Mail</button>
+                    <button id='boutton' name='OK' type='submit'>" $res "</button>
                 </form>";
              ?>
         </form>
