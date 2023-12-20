@@ -37,10 +37,11 @@ $res='Envoyer un Mail';
                   ->verify($gRecaptchaResponse, $remoteIp);
 
         if ($resp->isSuccess()) {
-            $capChat = "Succes";
+            echo "Succes !";
         } else {
             $errors = $resp->getErrorCodes();
-            $capChat = "Fail";
+            var_dump($error);
+        }
     }
 
     ?>
