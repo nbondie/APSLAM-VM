@@ -108,12 +108,11 @@ if(!empty($_POST)) {
             <h3>Le contenu :</h3>
             <textarea class='entrer' name="body"></textarea><br>
             <?php
-            if($captcha=="Fail"){
-                echo "<form method='POST'>
-                        <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
-                        <button id='boutton' name='OK' type='submit'>Envoyer le Mail</button>
-                      </form>";
-            } ?>
+            echo "<form method='POST'>
+                    <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
+                    <button id='boutton' name='OK' type='submit'>Envoyer le Mail</button>
+                </form>";
+             ?>
         </form>
     </div>
 </div>
