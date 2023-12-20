@@ -27,15 +27,13 @@ $res='Envoyer un Mail';
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <?php
-    require_once '/reCaptcha/autoload.php';
+    require 'reCaptcha/autoload.php';
     if(isset($_POST['OK'])){
         $recaptcha = new \ReCaptcha\ReCaptcha("6Ld-9zcpAAAAAAm0DXEl56Z_mwrFL2srdSnuAq3J");
 
         $gRecaptchaResponse = $_POST['g-recaptcha-response'];
 
         $resp = $recaptcha->setExpectedHostname('srv1-vm-1126.sts-sio-caen.info')
-                  ->setExpectedAction('homepage')
-                  ->setScoreThreshold(0.5)
                   ->verify($gRecaptchaResponse, $remoteIp);
 
         if ($resp->isSuccess()) {
