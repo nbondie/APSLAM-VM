@@ -90,10 +90,9 @@ if(!empty($_POST)) {
         } else{
             echo "Captchat non validé !";
         }
+        $res= "Le message a bien été envoyer";
     } catch (Exception $e) {
         $res= "Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer";
-    } if ($res=="Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer"){
-        $res= "Le message a bien été envoyer";
     }
 }
 ?>
