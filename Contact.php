@@ -107,7 +107,7 @@ if(!empty($_POST)) {
             <h3>Le contenu :</h3>
             <textarea class='entrer' name="body"></textarea><br>
             <?php  if($capChat = "Succes"){
-                ?><button id='boutton' type="submit"><?php echo $res ?></button><?php
+                echo "<button id='boutton' type="submit">' echo $res '</button>"
             } ?>
             <button id='boutton' type="submit"><?php echo $res ?></button>
         </form>
