@@ -38,9 +38,11 @@ $res='Envoyer un Mail';
 
         if ($resp->isSuccess()) {
             echo "Succes !";
+            $captcha = "Succes";
         } else {
             $errors = $resp->getErrorCodes();
             var_dump($error);
+            $captcha = "Fail";
         }
     }
 
