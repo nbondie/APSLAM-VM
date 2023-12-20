@@ -1,7 +1,6 @@
 <?php
 $data=yaml_parse_file('donnée.yaml');
 $res='Envoyer un Mail';
-$captcha="Fail" ;
 ?>
 
 
