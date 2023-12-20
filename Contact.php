@@ -37,11 +37,10 @@ $res='Envoyer un Mail';
                   ->verify($gRecaptchaResponse, $remoteIp);
 
         if ($resp->isSuccess()) {
-            echo "Succes !";
+            $capChat = "Succes";
         } else {
             $errors = $resp->getErrorCodes();
-            var_dump($error);
-        }
+            $capChat = "Fail";
     }
 
     ?>
@@ -107,6 +106,9 @@ if(!empty($_POST)) {
             <input class='entrer' type="text" name="subject" placeholder="Sujet"><br>
             <h3>Le contenu :</h3>
             <textarea class='entrer' name="body"></textarea><br>
+            <?php  if($capChat = "Succes"){
+                ?><button id='boutton' type="submit"><?php echo $res ?></button><?php
+            } ?>
             <button id='boutton' type="submit"><?php echo $res ?></button>
         </form>
     </div>
