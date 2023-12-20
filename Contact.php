@@ -84,7 +84,7 @@ if(!empty($_POST)) {
         $mail->Subject = $_POST['subject']??'Subject';
         $mail->Body = $_POST['body']??'This is the HTML message body <b>in bold!</b>';
         
-        if$captcha=="Succes"){
+        if ($captcha=="Succes"){
             $mail->send();
         } else{
             echo "Captchat non validé !";
