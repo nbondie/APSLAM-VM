@@ -107,8 +107,7 @@ if(!empty($_POST)) {
             <?php
             if($captcha=="Fail"){
                 echo "<form method='POST'>
-                        <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
-                        <input type='submit' name='OK' value='Submit'>
+                        <input type='submit' name='OK'> <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div></input><br/>
                       </form>";
                 $res='Envoyer un Mail';
             }
