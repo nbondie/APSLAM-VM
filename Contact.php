@@ -109,6 +109,7 @@ if(!empty($_POST)) {
             <input class='entrer' type="text" name="subject" placeholder="Sujet"><br>
             <h3>Le contenu :</h3>
             <textarea class='entrer' name="body"></textarea><br>
+            <?php echo $captcha ?>
             <button id='boutton' type="submit"><?php echo $res ?></button>
         </form>
     </div>
