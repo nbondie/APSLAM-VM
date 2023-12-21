@@ -42,8 +42,11 @@ $captcha="Fail" ;
 <?php
 echo 'prout';
 include_once 'yaml/vendor/autoload.php';
+echo 'prout1';
 use PHPMailer\PHPMailer\PHPMailer;
+echo 'prout2';
 use PHPMailer\PHPMailer\SMTP;
+echo 'prout3';
 require "./PHPMailer/src/Exception.php";
 require "./PHPMailer/src/PHPMailer.php";
 require "./PHPMailer/src/SMTP.php";
