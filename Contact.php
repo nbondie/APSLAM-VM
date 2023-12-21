@@ -51,7 +51,7 @@ $captcha="Fail" ;
 
 
 <?php
-include_once 'yaml/vendor/autoload.php';
+include_once 'usr/share/php/Symfony/Contracts/Service/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
