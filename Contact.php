@@ -1,6 +1,7 @@
 <?php
 $data=yaml_parse_file('donnée.yaml');
-$res='Envoyer un Mail';
+$res="Envoyer un Mail";
+$captcha="Fail" ;
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -30,7 +31,6 @@ $res='Envoyer un Mail';
         $resp = $recaptcha->setExpectedHostname('srv1-vm-1126.sts-sio-caen.info')
                   ->verify($gRecaptchaResponse, $remoteIp);
         if ($resp->isSuccess()) {
-            echo "Succes !";
             $captcha = "Succes";
         } else {
             $errors = $resp->getErrorCodes();
@@ -39,11 +39,6 @@ $res='Envoyer un Mail';
         }
     }
     ?>
-    <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d"></div>
-      <br/>
-      <input type="submit" name="OK" value="Submit">
-    </form>
 <?php
 include_once 'yaml/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
@@ -73,8 +68,13 @@ if(!empty($_POST)) {
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = $_POST['subject']??'Subject';
         $mail->Body = $_POST['body']??'This is the HTML message body <b>in bold!</b>';
- 
-        $mail->send();
+        
+        if ($captcha=="Succes"){
+            $mail->send();
+        } else{
+            echo "Captchat non validé !";
+            $res= "Captchat non validé !";
+        }
         $res= "Le message a bien été envoyer";
     } catch (Exception $e) {
         $res= "Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer";
@@ -93,13 +93,11 @@ if(!empty($_POST)) {
             <h3>Le contenu :</h3>
             <textarea class='entrer' name="body"></textarea><br>
             <?php
-             if($captcha="Succes"){
-                echo "<button id='boutton' type='submit'>kaka</button>";
-                echo "<button id='boutton' type='submit'>" .echo $res. "</button>";
-             }
-
-            ?>
-            <button id='boutton' type="submit"><?php echo $res ?></button>
+            echo "<form method='POST'>
+                    <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
+                    <button id='boutton' name='OK' type='submit'>" .$res. "</button>
+                </form>";
+             ?>
         </form>
     </div>
 </div>
