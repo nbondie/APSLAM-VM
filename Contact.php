@@ -21,7 +21,6 @@ $captcha="Fail" ;
 	
 </header>
 <body>
-    <title>reCAPTCHA demo: Simple page</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <?php
     require 'reCaptcha/autoload.php';
@@ -39,6 +38,7 @@ $captcha="Fail" ;
         }
     }
     ?>
+
 <?php
 include_once 'yaml/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
@@ -62,7 +62,7 @@ if(!empty($_POST)) {
  
         //Recipients
         $mail->setFrom('noe.bondiehouette@sts-sio-caen.info', $_POST['from']);
-        $mail->addAddress($_POST['to']??'noe.bondiehouette@sts-sio-caen.info');     //Add a recipient
+        $mail->addAddress($_POST['to'], 'noe.bondiehouette@sts-sio-caen.info');     //Add a recipient
  
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
@@ -81,6 +81,8 @@ if(!empty($_POST)) {
     }
 }
 ?>
+
+
 <div id='contact'>
     <div id='box'>
         <form action="Contact.php" method="post">
