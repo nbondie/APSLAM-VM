@@ -78,6 +78,7 @@ if(!empty($_POST)) {
         $res= "Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer";
     }
 }
+}
 ?>
 
 
