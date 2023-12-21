@@ -72,7 +72,6 @@ if(!empty($_POST)) {
         if ($captcha=="Succes"){
             $mail->send();
         } else{
-            echo "Captchat non validé !";
             $res= "Captchat non validé !";
         }
         $res= "Le message a bien été envoyer";
