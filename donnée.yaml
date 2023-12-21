@@ -49,7 +49,7 @@ Compétence:
            score: '85%'
            lvl: '4'
   
-   - domaine: 'Languages
+   - domaine: 'Languages'
      item:
          - nom: 'Projet Voltaire'
            score: 'en cours'
