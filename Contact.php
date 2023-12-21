@@ -27,7 +27,7 @@ $captcha="Fail" ;
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <?php
-    require 'reCaptcha/autoload.php';
+    use 'reCaptcha/autoload.php';
     if(isset($_POST['OK'])){
         $recaptcha = new \ReCaptcha\ReCaptcha("6Ld-9zcpAAAAAAm0DXEl56Z_mwrFL2srdSnuAq3J");
 
