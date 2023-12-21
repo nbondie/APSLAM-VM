@@ -74,11 +74,12 @@ if(!empty($_POST)) {
             $mail->send();
         } else{
             $res= "Captchat non validé !";
-    } catch (Exception $e) {
-        $res= "Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer";
+        } 
     }
-}
-}
+        catch (Exception $e) {
+            $res= "Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer";
+        }
+    }
 ?>
 
 
