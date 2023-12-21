@@ -28,7 +28,7 @@ $captcha="Fail" ;
 
 <?php
     require 'reCaptcha/autoload.php';
-    
+
     if(isset($_POST['OK'])){
         $recaptcha = new \ReCaptcha\ReCaptcha("6Ld-9zcpAAAAAAm0DXEl56Z_mwrFL2srdSnuAq3J");
 
@@ -48,6 +48,27 @@ $captcha="Fail" ;
 
 ?>
 
+
+<div id='contact'>
+    <div id='box'>
+        <form action="Contact.php" method="post">
+            <h3>Votre Nom :</h3>
+            <input class='entrer' type="text" name="from"><br>
+            <h3>Votre adresse mail :</h3>
+            <input class='entrer' type="text" name="to" value="monaddressmail@gmail.com"><br>
+            <h3>Le sujet du mail :</h3>
+            <input class='entrer' type="text" name="subject" placeholder="Sujet"><br>
+            <h3>Le contenu :</h3>
+            <textarea class='entrer' name="body"></textarea><br>
+            <?php
+            echo "<form method='POST'>
+                    <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
+                    <button id='boutton' name='OK' type='submit'>" .$res. "</button>
+                </form>";
+             ?>
+        </form>
+    </div>
+</div>
 
 
 <?php
@@ -95,27 +116,6 @@ if(!empty($_POST)) {
     }
 }
 ?>
-
-<div id='contact'>
-    <div id='box'>
-        <form action="Contact.php" method="post">
-            <h3>Votre Nom :</h3>
-            <input class='entrer' type="text" name="from"><br>
-            <h3>Votre adresse mail :</h3>
-            <input class='entrer' type="text" name="to" value="monaddressmail@gmail.com"><br>
-            <h3>Le sujet du mail :</h3>
-            <input class='entrer' type="text" name="subject" placeholder="Sujet"><br>
-            <h3>Le contenu :</h3>
-            <textarea class='entrer' name="body"></textarea><br>
-            <?php
-            echo "<form method='POST'>
-                    <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
-                    <button id='boutton' name='OK' type='submit'>" .$res. "</button>
-                </form>";
-             ?>
-        </form>
-    </div>
-</div>
 
 
 </body>
