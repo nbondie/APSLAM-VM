@@ -33,7 +33,7 @@ $captcha="Fail" ;
             $captcha = "Succes";
         } else {
             $errors = $resp->getErrorCodes();
-            var_dump($error);
+            var_dump($errors);
             $captcha = "Fail";
         }
     }
