@@ -43,9 +43,7 @@ $captcha="Fail" ;
 include_once 'yaml/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
-require "./PHPMailer/src/Exception.php";
-require "./PHPMailer/src/PHPMailer.php";
-require "./PHPMailer/src/SMTP.php";
+
 if(!empty($_POST)) {
  
     $mail = new PHPMailer(true);
@@ -62,20 +60,19 @@ if(!empty($_POST)) {
  
         //Recipients
         $mail->setFrom('noe.bondiehouette@sts-sio-caen.info', $_POST['from']);
-        $mail->addAddress($_POST['to'], 'noe.bondiehouette@sts-sio-caen.info');     //Add a recipient
+        $mail->addAddress($_POST['to']??'noe.bondiehouette@sts-sio-caen.info');     //Add a recipient
  
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = $_POST['subject']??'Subject';
         $mail->Body = $_POST['body']??'This is the HTML message body <b>in bold!</b>';
-        
         if ($captcha=="Succes"){
             $mail->send();
+            $res= "Le message a bien été envoyer";
         } else{
             $res= "Captchat non validé !";
         }
-        $res= "Le message a bien été envoyer";
-    } catch (Exception $e) {
+         catch (Exception $e) {
         $res= "Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer";
     }
 }
