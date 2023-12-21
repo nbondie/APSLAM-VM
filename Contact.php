@@ -38,7 +38,7 @@ $captcha="Fail" ;
         }
     }
     ?>
-prout
+
 <?php
 include_once 'yaml/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
@@ -49,7 +49,7 @@ require "./PHPMailer/src/SMTP.php";
 if(!empty($_POST)) {
  
     $mail = new PHPMailer(true);
- 
+ 	echo 'prout';
     try {
         //Server settings
         $mail->isSMTP();                                            //Send using SMTP
