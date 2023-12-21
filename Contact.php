@@ -97,7 +97,7 @@ if(!empty($_POST)) {
 
 <div id='contact'>
     <div id='box'>
-        <form action="Contact.php" method="post">
+        <form action="/#Contact" method="post">
             <h3>Votre Nom :</h3>
             <input class='entrer' type="text" name="from"><br>
             <h3>Votre adresse mail :</h3>
