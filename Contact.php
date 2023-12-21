@@ -107,12 +107,10 @@ if(!empty($_POST)) {
             <input class='entrer' type="text" name="subject" placeholder="Sujet"><br>
             <h3>Le contenu :</h3>
             <textarea class='entrer' name="body"></textarea><br>
-            <?php
-            echo "<form method='POST'>
-                    <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
-                    <button id='boutton' name='OK' type='submit'>" .$res. "</button>
-                </form>";
-             ?>
+            <form method='POST'>
+                <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
+                <button id='boutton' name='OK' type='submit'>" <?php echo .$res.; ?> "</button>
+            </form>"
         </form>
     </div>
 </div>
