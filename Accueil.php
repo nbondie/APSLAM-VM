@@ -1,4 +1,5 @@
 <?php
+require_once("yaml/yaml.php");
 $data=yaml_parse_file('donnée.yaml');
 
 ?>
@@ -25,9 +26,9 @@ $data=yaml_parse_file('donnée.yaml');
 	<div id="Accueil">
 		<p id='titre'>Mon Portfolio</p>
 		<div id='presentation'>
-			<img id='pdp' src='pdp.jpg'> 
-			<h2 id='nom'>Noé Bondie Houette</h2>
-			<p id='accroche'>Dans le code et les astuces, Bondie éblouit et séduit.</p>
+			<img id='pdp' src=<?php echo $data["Photo"]?> > 
+			<?php echo "<p id='nom'>".$data["Nom"]."</p>"; ?>
+			<?php echo "<p id='accroche'>".$data["AccrocheAccueil"]."</p>"; ?>
 		</div> 
 	</div>
 	

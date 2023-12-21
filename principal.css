@@ -94,7 +94,7 @@
 	margin-left:15vw;
 }
 
-#APropos #texte{
+#APropos #paragraphe{
 	font-size: 0.9vw;
 	margin-left:38vw;
 	margin-top:-23vw;
@@ -164,14 +164,6 @@
 
 
 
-
-
-
-
-
-
-
-
 #formation #titre{
 	margin-top: 5vw;
 	margin-left: 10vw;
@@ -189,13 +181,18 @@
 
 
 #contact{
+	padding-left: 5vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	padding-right: 5vw;
+
 	margin-top: 5ch;
 	margin-left: 30vw;
 	margin-right: 30vw;
 	margin-bottom: 5vw;
-	padding: 5vw;
 	background-color: blueviolet;
 	border-radius: 2vw;
+
 }
 
 #contact #box{
@@ -212,14 +209,23 @@
 	margin: 0.5vw;
 	padding: 1vw;
 	width: 20vw;
+	max-width: 20vw;
 }
 
 #contact #boutton{
 	border-radius: 0.5vw;
-	margin: 0.5vw;
+	margin-left: 3vw;
+	margin-right: 3vw;
 	padding: 1vw;
-	width: 20vw;
+	width: 17vw;
 }
+
+#contact .resMess{
+	margin-top: 1vw;
+	margin-left: 5vw;
+	
+}
+
 
 
 
