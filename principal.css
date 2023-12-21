@@ -1,0 +1,256 @@
+*{
+	margin:0;
+}
+
+
+#entete{
+	border:	0.2vw solid blue;
+	background-color:white;
+}
+
+#logo{
+	height:5vw;
+	margin-top:1vw;
+	margin-bottom:1vw;
+	text-align:center;
+	margin-left:15vw;
+}
+
+#lien{
+	font-size:1vw;
+	margin-top:-6vw;
+	margin-bottom:1vw;
+	margin-left:50vw;
+	display: flex;
+	padding:1vw;
+}
+
+#lien li{
+	list-style-type:none;
+}
+
+#lien li a:hover{
+	color: #E85D04;
+}
+
+#lien li a {
+	text-decoration: none;
+	line-height: 1vw;
+	transition: .2s;
+	padding:1vw;
+}
+
+#lien li i {
+	padding:0.5vw;
+	font-size:1.2vw
+}
+
+
+
+
+
+
+#Accueil #titre{
+	margin-top:15vw;
+	font-size:5vw;
+	text-align:center
+}
+
+#Accueil #presentation{
+	margin-top:5vw;
+	margin-bottom:5vw;
+}
+
+#Accueil #pdp{
+	width:20vw;
+	margin-left: 40vw;
+	margin-top: 20vw;
+}
+
+#Accueil #nom{
+	font-size: 1.8vw;
+	text-align: center;
+}
+
+#Accueil #accroche{
+	font-size: 1.5vw;
+	margin-top: 1vw;
+	text-align: center;
+}
+
+
+
+
+
+
+
+#APropos #presentation{
+	margin-top:5vw;
+	margin-bottom:5vw;
+}
+
+#APropos #pdp{
+	width:20vw;
+	margin-left:15vw;
+}
+
+#APropos #texte{
+	font-size: 0.9vw;
+	margin-left:38vw;
+	margin-top:-23vw;
+	margin-right: 5vw;
+}
+
+#APropos #accroche{
+	font-size: 1.3vw;
+	margin-left:11vw;
+	margin-top:5vw;
+}
+
+
+
+
+
+
+
+
+#competence #titre{
+	margin-top: 5vw;
+	margin-left: 10vw;
+	font-size:3vw;
+}
+
+#competence #resultat{
+	font-size: 1.5vw;
+	margin-top: 1vw;
+	margin-left: 25vw;
+}
+
+
+
+
+
+
+
+
+#experience #titre{
+	margin-top: 5vw;
+	margin-left: 10vw;
+	font-size:3vw;
+}
+
+#experience #resultat{
+	font-size: 1.5vw;
+	margin-top: 1vw;
+	margin-left: 25vw;
+}
+
+#experience #titreCV{
+	margin-top: 2vw;
+	margin-left: 10vw;
+	font-size:2vw;
+}
+
+#experience #cv{
+	font-size: 1.7vw;
+	margin-left: 20vw;
+	text-decoration: none;
+	color:blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#formation #titre{
+	margin-top: 5vw;
+	margin-left: 10vw;
+	font-size:3vw;
+}
+
+#formation #resultat{
+	font-size: 1.5vw;
+	margin-top: 1vw;
+	margin-left: 25vw;
+}
+
+
+
+
+
+#contact{
+	margin-top: 5ch;
+	margin-left: 30vw;
+	margin-right: 30vw;
+	margin-bottom: 5vw;
+	padding: 5vw;
+	background-color: blueviolet;
+	border-radius: 2vw;
+}
+
+#contact #box{
+	border: 0.2vw solid black;
+	border-radius: 1vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2vw;
+}
+
+#contact .entrer{
+	border-radius: 0.5vw;
+	margin: 0.5vw;
+	padding: 1vw;
+	width: 20vw;
+}
+
+#contact #boutton{
+	border-radius: 0.5vw;
+	margin: 0.5vw;
+	padding: 1vw;
+	width: 20vw;
+}
+
+
+
+
+
+
+footer{
+	margin-top: 10vw;
+	margin-bottom: 1vw;
+	border-top:	2px solid blue;
+	border-bottom:	2px solid blue;
+}
+
+footer h1{
+	font-size: 2vw;
+	margin-left: 20vw;
+	margin-top: 2.5vw;
+}
+
+footer p{
+	font-size: 1.2vw;
+	margin-left: 25vw;
+	margin-top: 0vw;
+}
+
+footer li{
+	list-style-type: none;
+}
+
+footer #carte{
+	margin-left: 60vw;
+	margin-top: -6vw;
+	margin-bottom: 0.5vw;
+}
