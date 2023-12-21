@@ -40,6 +40,7 @@ $captcha="Fail" ;
     ?>
 
 <?php
+echo 'prout';
 include_once 'yaml/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
