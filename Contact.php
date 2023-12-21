@@ -3,6 +3,8 @@ $data=yaml_parse_file('donnée.yaml');
 $res="Envoyer un Mail";
 $captcha="Fail" ;
 ?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <link rel="stylesheet" href="principal.css">
@@ -21,39 +23,49 @@ $captcha="Fail" ;
 	
 </header>
 <body>
+
+    <title>reCAPTCHA demo: Simple page</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <?php
     require 'reCaptcha/autoload.php';
     if(isset($_POST['OK'])){
         $recaptcha = new \ReCaptcha\ReCaptcha("6Ld-9zcpAAAAAAm0DXEl56Z_mwrFL2srdSnuAq3J");
+
         $gRecaptchaResponse = $_POST['g-recaptcha-response'];
+
         $resp = $recaptcha->setExpectedHostname('srv1-vm-1126.sts-sio-caen.info')
                   ->verify($gRecaptchaResponse, $remoteIp);
+
         if ($resp->isSuccess()) {
             $captcha = "Succes";
         } else {
             $errors = $resp->getErrorCodes();
-            var_dump($errors);
+            var_dump($error);
             $captcha = "Fail";
         }
     }
+
     ?>
 
+
+
 <?php
-echo 'prout';
 include_once 'yaml/vendor/autoload.php';
-echo 'prout1';
+
 use PHPMailer\PHPMailer\PHPMailer;
-echo 'prout2';
 use PHPMailer\PHPMailer\SMTP;
-echo 'prout3';
+
 require "./PHPMailer/src/Exception.php";
 require "./PHPMailer/src/PHPMailer.php";
 require "./PHPMailer/src/SMTP.php";
+
+
+
 if(!empty($_POST)) {
  
     $mail = new PHPMailer(true);
- 	echo 'prout';
+ 
     try {
         //Server settings
         $mail->isSMTP();                                            //Send using SMTP
@@ -66,26 +78,23 @@ if(!empty($_POST)) {
  
         //Recipients
         $mail->setFrom('noe.bondiehouette@sts-sio-caen.info', $_POST['from']);
-        $mail->addAddress($_POST['to'], 'noe.bondiehouette@sts-sio-caen.info');     //Add a recipient
+        $mail->addAddress($_POST['to']??'noe.bondiehouette@sts-sio-caen.info');     //Add a recipient
  
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = $_POST['subject']??'Subject';
         $mail->Body = $_POST['body']??'This is the HTML message body <b>in bold!</b>';
-        
         $res= "Le message a bien été envoyer";
         if ($captcha=="Succes"){
             $mail->send();
         } else{
             $res= "Captchat non validé !";
-        } 
-    }
-        catch (Exception $e) {
-            $res= "Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer";
         }
+    } catch (Exception $e) {
+        $res= "Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer";
     }
+}
 ?>
-
 
 <div id='contact'>
     <div id='box'>
@@ -107,11 +116,16 @@ if(!empty($_POST)) {
         </form>
     </div>
 </div>
+
+
 </body>
+
 <footer>
     <h1>Me contacter :</h1>
     <li><?php echo "<p>".$data["NumTel"]."</p>\n"; ?></li>
 	<li><?php echo "<p>".$data["AdresseMail"]."</p>\n"; ?></li>
    	<a><iframe id="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20875.933929994153!2d-0.28284207120595173!3d49.153273786357424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a692d0b34f9a7%3A0x40c14484fbcf780!2s14630%20Cagny!5e0!3m2!1sfr!2sfr!4v1698091119578!5m2!1sfr!2sfr" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
 </footer>
+
 </html>
+
