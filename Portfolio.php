@@ -12,11 +12,11 @@ $data=yaml_parse_file('donnée.yaml');
 	<div id='entete'>
 		<a href='Accueil.php'><img id='logo' src='logo.png' /></a>
 		<div id='lien'>
-			<li><a href='APropos.php'><i class="fa-solid fa-magnifying-glass"></i>A propos</a></li>
-			<li><a href='Competences.php'><i class="fa-solid fa-check"></i>Compétences</a></li>
-			<li><a href='Experience.php'><i class="fa-solid fa-flask"></i>Exprérience</a></li>
-			<li><a href='Formation.php'><i class="fa-solid fa-list"></i>Formation</a></li>
-			<li><a href='Contact.php'><i class="fa-solid fa-phone"></i>Contact</a></li>
+			<li><a href='#\APropos.php'><i class="fa-solid fa-magnifying-glass"></i>A propos</a></li>
+			<li><a href='#\Competences.php'><i class="fa-solid fa-check"></i>Compétences</a></li>
+			<li><a href='#\Experience.php'><i class="fa-solid fa-flask"></i>Exprérience</a></li>
+			<li><a href='#\Formation.php'><i class="fa-solid fa-list"></i>Formation</a></li>
+			<li><a href='#\Contact.php'><i class="fa-solid fa-phone"></i>Contact</a></li>
 		</div>	
 	</div>
 	
