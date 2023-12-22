@@ -28,7 +28,7 @@ $data=yaml_parse_file('donnée.yaml');
 <h1 id="APropos"></h1>
 	<?php include 'APropos.php';
 	echo "<br></br>"; ?>
-<h1 id="Competence"></h1>
+<h1 id="Competences"></h1>
 	<?php include 'Competences.php';
 	echo "<br></br>"; ?>
 <h1 id="Experience"></h1>
