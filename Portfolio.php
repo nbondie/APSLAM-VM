@@ -12,34 +12,33 @@ $data=yaml_parse_file('donnée.yaml');
 	<div id='entete'>
 		<a href='Accueil.php'><img id='logo' src='logo.png' /></a>
 		<div id='lien'>
-			<li><a href='#APropos.php'><i class="fa-solid fa-magnifying-glass"></i>A propos</a></li>
-			<li><a href='#Competences.php'><i class="fa-solid fa-check"></i>Compétences</a></li>
-			<li><a href='#Experience.php'><i class="fa-solid fa-flask"></i>Exprérience</a></li>
-			<li><a href='#Formation.php'><i class="fa-solid fa-list"></i>Formation</a></li>
-			<li><a href='#Contact.php'><i class="fa-solid fa-phone"></i>Contact</a></li>
+			<li><a href='#APropos'><i class="fa-solid fa-magnifying-glass"></i>A propos</a></li>
+			<li><a href='#Competences'><i class="fa-solid fa-check"></i>Compétences</a></li>
+			<li><a href='#Experience'><i class="fa-solid fa-flask"></i>Exprérience</a></li>
+			<li><a href='#Formation'><i class="fa-solid fa-list"></i>Formation</a></li>
+			<li><a href='#Contact'><i class="fa-solid fa-phone"></i>Contact</a></li>
 		</div>	
 	</div>
 	
 </head>
 <body>
 <h1 id="Accueil"></h1>
-<?php include 'Accueil.php';
-echo "<br></br>"; ?>
+	<?php include 'Accueil.php';
+	echo "<br></br>"; ?>
 <h1 id="APropos"></h1>
-<?php include 'APropos.php';
-echo "<br></br>"; ?>
+	<?php include 'APropos.php';
+	echo "<br></br>"; ?>
 <h1 id="Competence"></h1>
-<?php include 'Competences.php';
-echo "<br></br>"; ?>
+	<?php include 'Competences.php';
+	echo "<br></br>"; ?>
 <h1 id="Experience"></h1>
-<?php include 'Experience.php';
-echo "<br></br>"; ?>
+	<?php include 'Experience.php';
+	echo "<br></br>"; ?>
 <h1 id="Formation"></h1>
-<?php include 'Formation.php';
-echo "<br></br>"; ?>
+	<?php include 'Formation.php';
+	echo "<br></br>"; ?>
 <h1 id="Contact"></h1>
-<?php include 'Contact.php';
-?>
+	<?php include 'Contact.php'; ?>
 
 </body>
 <footer>
