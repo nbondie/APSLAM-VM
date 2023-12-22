@@ -39,12 +39,12 @@ $data=yaml_parse_file('donnée.yaml');
 											$tot=0;
 
 											while ($lvl >0) {
-												echo "<p class='etoile'>".$star."</p>";
+												echo "<div class='etoile'>".$star."</div>";
 												$lvl=$lvl-1;
 												$tot=$tot+1;
 											}
 											while ($tot <5) {
-												echo "<p class='etoile'>".$star2."</p>";
+												echo "<div class='etoile'>".$star2."</div>";
 												$tot=$tot+1;
 											}
 										?></li><br>
