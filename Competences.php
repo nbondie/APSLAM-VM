@@ -33,18 +33,18 @@ $data=yaml_parse_file('donnée.yaml');
 										<li><?php
 											$lvl=$unItem["lvl"];
 
-											$star="<i class='fa-solid fa-star'></i>";
-											$star2="<i class='fa-regular fa-star'></i>";
+											$star="<i id='etoile' class='fa-solid fa-star'></i>";
+											$star2="<i id='etoile' class='fa-regular fa-star'></i>";
 											$nv=0;
 											$tot=0;
 
 											while ($lvl >0) {
-												echo " ".$star." ";
+												echo $star;
 												$lvl=$lvl-1;
 												$tot=$tot+1;
 											}
 											while ($tot <5) {
-												echo " ".$star2." ";
+												echo $star2;
 												$tot=$tot+1;
 											}
 										?></li><br>
