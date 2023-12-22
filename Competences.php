@@ -39,12 +39,12 @@ $data=yaml_parse_file('donnée.yaml');
 											$tot=0;
 
 											while ($lvl >0) {
-												echo $star." "" ";
+												echo $star." "' ';
 												$lvl=$lvl-1;
 												$tot=$tot+1;
 											}
 											while ($tot <5) {
-												echo $star2." "" ";
+												echo $star2." "' ';
 												$tot=$tot+1;
 											}
 										?></li><br>
