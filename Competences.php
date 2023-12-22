@@ -33,8 +33,8 @@ $data=yaml_parse_file('donnée.yaml');
 										<li><?php
 											$lvl=$unItem["lvl"];
 
-											$star="<i id='etoile' class='fa-solid fa-star'></i>";
-											$star2="<i id='etoile' class='fa-regular fa-star'></i>";
+											$star="<i class='etoile' class='fa-solid fa-star'></i>";
+											$star2="<i class='etoile' class='fa-regular fa-star'></i>";
 											$nv=0;
 											$tot=0;
 
