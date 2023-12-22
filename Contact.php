@@ -11,6 +11,7 @@ $captcha="Fail" ;
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
 <body>
 
+
     <title>reCAPTCHA demo: Simple page</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -83,6 +84,7 @@ if(!empty($_POST)) {
 ?>
 
 <div id='contact'>
+<h1 id='titre'>Me contacter :</h1>
     <div id='box'>
         <form action="/#Contact" method="post">
             <h3>Votre Nom :</h3>
