@@ -23,12 +23,12 @@ $data=yaml_parse_file('donnée.yaml');
 </head>
 <body>
 <?php
-include 'Accueil.php';
-include 'APropos.php';
-include 'Competences.php';
-include 'Experience.php';
-include 'Formation.php';
-include 'Contact.php';
+include 'Accueil.php';'<br>'
+include 'APropos.php';'<br>'
+include 'Competences.php';'<br>'
+include 'Experience.php';'<br>'
+include 'Formation.php';'<br>'
+include 'Contact.php';'<br>'
 ?>
 
 </body>
