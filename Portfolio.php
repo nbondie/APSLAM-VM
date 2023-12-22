@@ -24,17 +24,16 @@ $data=yaml_parse_file('donnée.yaml');
 <body>
 <?php
 include 'Accueil.php';
-echo "</br>";
+echo "<br></br>";
 include 'APropos.php';
-echo "</br>";
+echo "<br></br>";
 include 'Competences.php';
-echo "</br>";
+echo "<br></br>";
 include 'Experience.php';
-echo "</br>";
+echo "<br></br>";
 include 'Formation.php';
-echo "</br>";
+echo "<br></br>";
 include 'Contact.php';
-echo "</br>";
 ?>
 
 </body>
