@@ -91,7 +91,7 @@ if(!empty($_POST)) {
             <h3>Votre Nom :</h3>
             <input class='entrer' type="text" name="from"><br>
             <h3>Votre adresse mail :</h3>
-            <input class='entrer' type="text" name="to" value="monaddressmail@gmail.com"><br>
+            <input class='entrer' type="text" name="to" value="Votre address mail"><br>
             <h3>Le sujet du mail :</h3>
             <input class='entrer' type="text" name="subject" placeholder="Sujet"><br>
             <h3>Le contenu :</h3>
