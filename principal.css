@@ -188,7 +188,7 @@
 
 
 
-#contact{
+#box{
 	margin-top: 5ch;
 	margin-left: 30vw;
 	margin-right: 30vw;
@@ -198,7 +198,7 @@
 	border-radius: 2vw;
 }
 
-#contact #box{
+#contact #boxMail{
 	border: 0.2vw solid black;
 	border-radius: 1vw;
 	display: flex;

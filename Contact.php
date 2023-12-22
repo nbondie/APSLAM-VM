@@ -85,7 +85,8 @@ if(!empty($_POST)) {
 
 <div id='contact'>
 <h1 id='titre'>Me contacter :</h1>
-    <div id='box'>
+<div id='box'>
+    <div id='boxMail'>
         <form action="/#Contact" method="post">
             <h3>Votre Nom :</h3>
             <input class='entrer' type="text" name="from"><br>
@@ -101,6 +102,7 @@ if(!empty($_POST)) {
             </form>
         </form>
     </div>
+</div>
 </div>
 
 
