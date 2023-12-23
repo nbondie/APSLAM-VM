@@ -96,7 +96,7 @@ li{
 
 
 
-#APropos #titre{
+.titre{
 	margin-top: 5vw;
 	margin-left: 10vw;
 	font-size:3vw;
@@ -129,15 +129,6 @@ li{
 
 
 
-
-
-
-#competence #titre{
-	margin-top: 5vw;
-	margin-left: 10vw;
-	font-size:3vw;
-}
-
 #competence #resultat{
 	font-size: 1.5vw;
 	margin-top: 1vw;
@@ -146,16 +137,6 @@ li{
 
 
 
-
-
-
-
-
-#experience #titre{
-	margin-top: 5vw;
-	margin-left: 10vw;
-	font-size:3vw;
-}
 
 #experience #resultat{
 	font-size: 1.5vw;
@@ -177,16 +158,6 @@ li{
 }
 
 
-
-
-
-
-
-#formation #titre{
-	margin-top: 5vw;
-	margin-left: 10vw;
-	font-size:3vw;
-}
 
 #formation #resultat{
 	font-size: 1.5vw;
@@ -243,12 +214,6 @@ li{
 	text-align: center;
 }
 
-#contact #titre{
-	margin-top: 5vw;
-	margin-left: 10vw;
-	font-size:3vw;
-	
-}
 
 
 

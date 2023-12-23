@@ -11,7 +11,7 @@ $data=yaml_parse_file('donnée.yaml');
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
 <body>
 	<div id='formation'>
-		<h1 id='titre'>Mes Formations :</h1>
+		<h1 class='titre'>Mes Formations :</h1>
 			<div id='resultat'>
 				<ul>
 				<?php

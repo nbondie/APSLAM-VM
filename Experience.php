@@ -10,7 +10,7 @@ $data=yaml_parse_file('donnée.yaml');
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
 <body>
 	<div id='experience'>
-		<h1 id='titre'>Mes expériences :</h1>
+		<h1 class='titre'>Mes expériences :</h1>
 		<div id='block2'>
 			<div id='resultat'>
 				<ul>
