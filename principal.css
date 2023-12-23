@@ -14,6 +14,7 @@
 
 #RS{
 	margin-left: 1vw;
+	display: flex;
 	float: left;
 }
 	
@@ -23,6 +24,7 @@
 
 #RS label{
 	font-size: 1vw;
+	margin: 0.25vw;
 }
 
 #Page{
