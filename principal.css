@@ -2,7 +2,6 @@
 	margin:0;
 }
 
-
 #entete{
 	border:	0.2vw solid blue;
 	background-color:white;
@@ -61,8 +60,6 @@ li{
 
 
 
-
-
 #Accueil #titre{
 	margin-top:20vw;
 	font-size:5vw;
@@ -90,8 +87,6 @@ li{
 	margin-top: 1vw;
 	text-align: center;
 }
-
-
 
 
 
@@ -124,7 +119,6 @@ li{
 	margin-left:11vw;
 	margin-top:5vw;
 }
-
 
 
 
@@ -162,7 +156,6 @@ li{
 	margin-top: 1vw;
 	margin-left: 25vw;
 }
-
 
 
 
@@ -215,13 +208,11 @@ li{
 
 
 
-
-
 footer{
 	margin-top: 10vw;
 	margin-bottom: 1vw;
-	border-top:	2px solid blue;
-	border-bottom:	2px solid blue;
+	border-top:	0.2vw solid blue;
+	border-bottom:	0.2vw solid blue;
 }
 
 footer h1{
