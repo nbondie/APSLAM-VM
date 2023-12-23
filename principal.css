@@ -12,25 +12,20 @@
 	left: 0;
 }
 
-#logo{
-	height:5vw;
-	margin-top:1vw;
-	margin-bottom:1vw;
-	text-align:center;
-	margin-left:15vw;
+#RS{
+	margin-top: 1.5vw;
+	margin-bottom:1.5vw;
+	float: left;
 }
-
+	
 #RS li{
 	margin: 1vw;
-	float: left;
 }
 
 #RS label{
 	font-size: 1vw;
 	margin: 0.5vw;
 }
-
-
 
 #Page{
 	font-size:1vw;
