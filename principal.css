@@ -185,7 +185,7 @@
 
 
 #contact #box{
-	margin-top: 5ch;
+	margin-top: 5vw;
 	margin-left: 33vw;
 	margin-right: 33vw;
 	margin-bottom: 5vw;
@@ -208,7 +208,7 @@
 	margin: 0.5vw;
 	padding: 1vw;
 	width: 20vw;
-	height: 2vw;
+	height: 1vw;
 	max-width: 20vw;
 }
 
