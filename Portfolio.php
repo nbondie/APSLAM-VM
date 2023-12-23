@@ -11,7 +11,6 @@ $data=yaml_parse_file('donnée.yaml');
 <title>Portfolio Noé Bondie Houette</title>
 <head>
 	<div id='entete'>
-		<a href='#Accueil'><img id='logo' src='logo.png' /></a>
 		<div id='RS'>
 			<li><i class="fa-brands fa-linkedin"></i><label>Noé Bondie Houette</label></li>
 			<li><i class="fa-brands fa-facebook"></i></i><label>NoéBondieHouette</label></li>
