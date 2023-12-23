@@ -34,7 +34,8 @@
 
 #Page{
 	font-size:1vw;
-	margin-bottom:1vw;
+	margin-top: 1.5vw;
+	margin-bottom:1.5vw;
 	display: flex;
 	float: right;
 }
