@@ -29,22 +29,22 @@
 	padding:1vw;
 }
 
-li{
+#Page li{
 	list-style-type:none;
 }
 
-#Page .page a:hover{
+#Page li a:hover{
 	color: #E85D04;
 }
 
-#Page .page a {
+#Page li a {
 	text-decoration: none;
 	line-height: 1vw;
 	transition: .2s;
 	padding:1vw;
 }
 
-#Page .page i {
+#Page li i {
 	padding:0.5vw;
 	font-size:1.2vw
 }
