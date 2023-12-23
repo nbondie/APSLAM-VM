@@ -157,8 +157,6 @@ li{
 	color:blueviolet;
 }
 
-
-
 #formation #resultat{
 	font-size: 1.5vw;
 	margin-top: 1vw;
@@ -236,10 +234,6 @@ footer p{
 	font-size: 1.2vw;
 	margin-left: 25vw;
 	margin-top: 0vw;
-}
-
-footer li{
-	list-style-type: none;
 }
 
 footer #carte{
