@@ -13,6 +13,11 @@ $data=yaml_parse_file('donnée.yaml');
 	<div id='entete'>
 		<a href='#Accueil'><img id='logo' src='logo.png' /></a>
 		<div id='lien'>
+			<li><i class="fa-brands fa-linkedin"></i><label>Noé Bondie Houette</label></li>
+			<li><i class="fa-brands fa-facebook"></i></i><label>NoéBondieHouette</label></li>
+			<li><i class="fa-brands fa-github"></i><label>nbondie</label></li>
+
+
 			<li><a href='#APropos'><i class="fa-solid fa-magnifying-glass"></i>A propos</a></li>
 			<li><a href='#Competences'><i class="fa-solid fa-check"></i>Compétences</a></li>
 			<li><a href='#Experience'><i class="fa-solid fa-flask"></i>Exprérience</a></li>
