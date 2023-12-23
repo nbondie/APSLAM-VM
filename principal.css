@@ -22,7 +22,7 @@
 
 #RS li{
 	margin: 1vw;
-	float: right;
+	float: left;
 }
 
 #RS label{
@@ -35,9 +35,7 @@
 #Page{
 	font-size:1vw;
 	margin-bottom:1vw;
-	margin-left:45vw;
-	display: flex;
-	padding:1vw;
+	float: right;
 }
 
 li{
