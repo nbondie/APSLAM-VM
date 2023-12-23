@@ -14,12 +14,15 @@
 
 #RS{
 	margin-left: 1vw;
+	margin-top: 1.5vw;
+	margin-bottom:1.5vw;
 	display: flex;
 	float: left;
+	font-size: 1vw;
 }
 	
 #RS li{
-	margin: 1vw;
+	margin: 0.5vw;
 }
 
 #RS label{
