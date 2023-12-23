@@ -12,17 +12,17 @@ $data=yaml_parse_file('donnée.yaml');
 <head>
 	<div id='entete'>
 		<a href='#Accueil'><img id='logo' src='logo.png' /></a>
-		<div id='lien'>
-			<li class='RS'><i class="fa-brands fa-linkedin"></i><label>Noé Bondie Houette</label></li>
-			<li class='RS'><i class="fa-brands fa-facebook"></i></i><label>NoéBondieHouette</label></li>
-			<li class='RS'><i class="fa-brands fa-github"></i><label>nbondie</label></li>
-
-
-			<li class='page'><a href='#APropos'><i class="fa-solid fa-magnifying-glass"></i>A propos</a></li>
-			<li class='page'><a href='#Competences'><i class="fa-solid fa-check"></i>Compétences</a></li>
-			<li class='page'><a href='#Experience'><i class="fa-solid fa-flask"></i>Exprérience</a></li>
-			<li class='page'><a href='#Formation'><i class="fa-solid fa-list"></i>Formation</a></li>
-			<li class='page'><a href='#Contact'><i class="fa-solid fa-phone"></i>Contact</a></li>
+		<div id='RS'>
+			<li><i class="fa-brands fa-linkedin"></i><label>Noé Bondie Houette</label></li>
+			<li><i class="fa-brands fa-facebook"></i></i><label>NoéBondieHouette</label></li>
+			<li><i class="fa-brands fa-github"></i><label>nbondie</label></li>
+		</div>
+		<div id='Page'>
+			<li><a href='#APropos'><i class="fa-solid fa-magnifying-glass"></i>A propos</a></li>
+			<li><a href='#Competences'><i class="fa-solid fa-check"></i>Compétences</a></li>
+			<li><a href='#Experience'><i class="fa-solid fa-flask"></i>Exprérience</a></li>
+			<li><a href='#Formation'><i class="fa-solid fa-list"></i>Formation</a></li>
+			<li><a href='#Contact'><i class="fa-solid fa-phone"></i>Contact</a></li>
 		</div>	
 	</div>
 	

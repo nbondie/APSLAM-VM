@@ -20,7 +20,7 @@
 	margin-left:15vw;
 }
 
-#lien{
+#Page{
 	font-size:1vw;
 	margin-top:-6vw;
 	margin-bottom:1vw;
@@ -29,22 +29,22 @@
 	padding:1vw;
 }
 
-#lien .page{
+li{
 	list-style-type:none;
 }
 
-#lien .page a:hover{
+#Page .page a:hover{
 	color: #E85D04;
 }
 
-#lien .page a {
+#Page .page a {
 	text-decoration: none;
 	line-height: 1vw;
 	transition: .2s;
 	padding:1vw;
 }
 
-#lien .page i {
+#Page .page i {
 	padding:0.5vw;
 	font-size:1.2vw
 }
