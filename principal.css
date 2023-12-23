@@ -29,6 +29,10 @@
 	margin: 0.25vw;
 }
 
+head li{
+	list-style-type:none;
+}
+
 #Page{
 	font-size:1vw;
 	margin-top: 1.5vw;
@@ -37,9 +41,6 @@
 	float: right;
 }
 
-li{
-	list-style-type:none;
-}
 
 #Page li a:hover{
 	color: #E85D04;
@@ -207,6 +208,10 @@ footer h1{
 	font-size: 2vw;
 	margin-left: 20vw;
 	margin-top: 2.5vw;
+}
+
+footer li{
+	list-style-type:none;
 }
 
 footer p{
