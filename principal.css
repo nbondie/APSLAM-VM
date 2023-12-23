@@ -20,6 +20,10 @@
 	margin-left:15vw;
 }
 
+#RS{
+	margin: 2vw;
+}
+
 #Page{
 	font-size:1vw;
 	margin-top:-6vw;
@@ -29,7 +33,7 @@
 	padding:1vw;
 }
 
-#Page li{
+li{
 	list-style-type:none;
 }
 
