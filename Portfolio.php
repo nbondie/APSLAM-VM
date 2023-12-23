@@ -18,6 +18,7 @@ $data=yaml_parse_file('donnée.yaml');
 			<li><i class="fa-brands fa-github"></i><label>nbondie</label></li>
 		</div>
 		<div id='Page'>
+			<li><a href='#Accueil'><i class="fa-solid fa-magnifying-glass"></i>Accueil</a></li>
 			<li><a href='#APropos'><i class="fa-solid fa-magnifying-glass"></i>A propos</a></li>
 			<li><a href='#Competences'><i class="fa-solid fa-check"></i>Compétences</a></li>
 			<li><a href='#Experience'><i class="fa-solid fa-flask"></i>Exprérience</a></li>
