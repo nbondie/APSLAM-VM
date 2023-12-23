@@ -205,9 +205,9 @@
 
 #contact .entrer{
 	border-radius: 0.5vw;
-	padding: 0.5vw;
+	padding: 1vw;
 	margin-right: 1vw;
-	margin: 1vw;
+	margin-left: 1vw;
 	width: 20vw;
 	height: 1vw;
 	max-width: 20vw;
