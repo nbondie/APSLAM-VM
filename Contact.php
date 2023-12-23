@@ -11,29 +11,26 @@ $captcha="Fail" ;
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
 <body>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <title>reCAPTCHA demo: Simple page</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<?php
+require 'reCaptcha/autoload.php';
+if(isset($_POST['OK'])){
+    $recaptcha = new \ReCaptcha\ReCaptcha("6Ld-9zcpAAAAAAm0DXEl56Z_mwrFL2srdSnuAq3J");
 
-    <?php
-    require 'reCaptcha/autoload.php';
-    if(isset($_POST['OK'])){
-        $recaptcha = new \ReCaptcha\ReCaptcha("6Ld-9zcpAAAAAAm0DXEl56Z_mwrFL2srdSnuAq3J");
+    $gRecaptchaResponse = $_POST['g-recaptcha-response'];
 
-        $gRecaptchaResponse = $_POST['g-recaptcha-response'];
+    $resp = $recaptcha->setExpectedHostname('srv1-vm-1126.sts-sio-caen.info')
+             ->verify($gRecaptchaResponse, $remoteIp);
 
-        $resp = $recaptcha->setExpectedHostname('srv1-vm-1126.sts-sio-caen.info')
-                  ->verify($gRecaptchaResponse, $remoteIp);
-
-        if ($resp->isSuccess()) {
-            $captcha = "Succes";
-        } else {
-            $errors = $resp->getErrorCodes();
-            $captcha = "Fail";
-        }
+    if ($resp->isSuccess()) {
+        $captcha = "Succes";
+    } else {
+        $errors = $resp->getErrorCodes();
+        $captcha = "Fail";
     }
-
-    ?>
+}
+?>
 
 
 

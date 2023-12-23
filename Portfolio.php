@@ -8,9 +8,10 @@ $data=yaml_parse_file('donnée.yaml');
 <html lang="fr">
 <link rel="stylesheet" href="principal.css">
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
+<title>Portfolio Noé Bondie Houette</title>
 <head>
 	<div id='entete'>
-		<a href='Accueil.php'><img id='logo' src='logo.png' /></a>
+		<a href='#Accueil'><img id='logo' src='logo.png' /></a>
 		<div id='lien'>
 			<li><a href='#APropos'><i class="fa-solid fa-magnifying-glass"></i>A propos</a></li>
 			<li><a href='#Competences'><i class="fa-solid fa-check"></i>Compétences</a></li>
