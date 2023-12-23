@@ -18,8 +18,5 @@ $data=yaml_parse_file('donnée.yaml');
 		</div> 
 	</div>
 	
-
-
-
 </body>
 </html>
