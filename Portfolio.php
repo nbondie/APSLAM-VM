@@ -23,32 +23,27 @@ $data=yaml_parse_file('donnée.yaml');
 </head>
 <body>
 <h1 id="Accueil"></h1>
-<?php echo "<br>";	
-	include 'Accueil.php';
-	echo "<br>"; ?>
+<?php echo "<br><br>";	
+	include 'Accueil.php'; ?>
 
 <h1 id="APropos"></h1>
-<?php echo "<br>";
-	include 'APropos.php';
-	echo "<br></br>"; ?>
+<?php echo "<br><br>";
+	include 'APropos.php'; ?>
 
 <h1 id="Competences"></h1>
-<?php echo "<br>";
-	include 'Competences.php';
-	echo "<br></br>"; ?>
+<?php echo "<br><br>";
+	include 'Competences.php'; ?>
 
 <h1 id="Experience"></h1>
-<?php echo "<br>";
-	include 'Experience.php';
-	echo "<br></br>"; ?>
+<?php echo "<br><br>";
+	include 'Experience.php'; ?>
 
 <h1 id="Formation"></h1>
-<?php echo "<br>";
-	include 'Formation.php';
-	echo "<br></br>"; ?>
+<?php echo "<br><br>";
+	include 'Formation.php'; ?>
 
 <h1 id="Contact"></h1>
-<?php echo "<br>";
+<?php echo "<br><br>";
 	include 'Contact.php'; ?>
 
 </body>
