@@ -10,7 +10,7 @@ $data=yaml_parse_file('donnée.yaml');
 	<div id='experience'>
 		<h1 class='titre'>Mes expériences :</h1>
 		<div id='block2'>
-			<div id='resultat'>
+			<div class='resultat'>
 				<ul>
 				<?php
 					foreach($data["Experience"] AS $uneExperience){
