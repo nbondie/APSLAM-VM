@@ -20,9 +20,11 @@
 	margin-left:15vw;
 }
 
-#RS{
-	margin: 2vw;
+#RS li{
+	margin: 1vw;
 }
+
+
 
 #Page{
 	font-size:1vw;
