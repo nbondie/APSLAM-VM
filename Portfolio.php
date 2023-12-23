@@ -9,7 +9,7 @@ $data=yaml_parse_file('donnée.yaml');
 <link rel="stylesheet" href="principal.css">
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
 <title>Portfolio Noé Bondie Houette</title>
-<head>
+<header>
 	<div id='entete'>
 		<div id='RS'>
 			<li><i class="fa-brands fa-linkedin"></i><label>Noé Bondie Houette</label></li>
@@ -26,7 +26,7 @@ $data=yaml_parse_file('donnée.yaml');
 		</div>	
 	</div>
 	
-</head>
+</header>
 <body>
 <h1 id="Accueil"></h1>
 <?php echo "<br><br>";	
