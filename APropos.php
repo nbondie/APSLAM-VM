@@ -1,8 +1,6 @@
 <?php
 $data=yaml_parse_file('donnée.yaml');
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -17,6 +15,5 @@ $data=yaml_parse_file('donnée.yaml');
 			<p id='accroche'>Dans le royaume du digital, Houette crée sans défaite.</p>	
 		</div> 
 	</div>
-	
 </body>
 </html>

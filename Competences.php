@@ -1,8 +1,6 @@
 <?php
 $data=yaml_parse_file('donnée.yaml');
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">

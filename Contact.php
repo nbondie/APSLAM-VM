@@ -4,13 +4,11 @@ $res="Envoyer un Mail";
 $captcha="Fail" ;
 ?>
 
-
 <!DOCTYPE html>
 <html lang="fr">
 <link rel="stylesheet" href="principal.css">
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
 <body>
-
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <?php
@@ -32,8 +30,6 @@ if(isset($_POST['OK'])){
 }
 ?>
 
-
-
 <?php
 include_once '/usr/share/php/Symfony/Contracts/Service/autoload.php';
 
@@ -45,11 +41,8 @@ require "/var/www/vendor/phpmailer/phpmailer/src/PHPMailer.php";
 require "/var/www/vendor/phpmailer/phpmailer/src/SMTP.php";
 
 
-
 if(!empty($_POST)) {
- 
     $mail = new PHPMailer(true);
- 
     try {
         //Server settings
         $mail->isSMTP();                                            //Send using SMTP
@@ -77,8 +70,7 @@ if(!empty($_POST)) {
     } catch (Exception $e) {
         $res= "Le message ne sait pas envoyer: {$mail->ErrorInfo} <br>Réessayer";
     }
-}
-?>
+} ?>
 
 <div id='contact'>
 <h1 class='titre'>Me contacter :</h1>
@@ -101,10 +93,7 @@ if(!empty($_POST)) {
     </div>
 </div>
 </div>
-
-
 </body>
-
 </html>
 
 

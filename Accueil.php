@@ -1,8 +1,6 @@
 <?php
 $data=yaml_parse_file('donnée.yaml');
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -17,9 +15,5 @@ $data=yaml_parse_file('donnée.yaml');
 			<p id='accroche'>Dans le code et les astuces, Bondie éblouit et séduit.</p>
 		</div> 
 	</div>
-	
-
-
-
 </body>
 </html>
