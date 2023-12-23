@@ -208,6 +208,7 @@
 	margin: 0.5vw;
 	padding: 1vw;
 	width: 20vw;
+	max-width: 2vw;
 }
 
 #contact h3{
