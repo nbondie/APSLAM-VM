@@ -1,4 +1,5 @@
 <?php
+require_once("yaml/yaml.php");
 $data=yaml_parse_file('donnée.yaml');
 ?>
 
@@ -35,14 +36,13 @@ $data=yaml_parse_file('donnée.yaml');
 											$star2="<i class='fa-regular fa-star'></i>";
 											$nv=0;
 											$tot=0;
-
 											while ($lvl >0) {
-												echo $star;
+												echo "<div id='etoile".$tot."' >".$star."</div>";
 												$lvl=$lvl-1;
 												$tot=$tot+1;
 											}
 											while ($tot <5) {
-												echo $star2;
+												echo "<div id='etoile".$tot."' >".$star2."</div>";
 												$tot=$tot+1;
 											}
 										?></li><br>

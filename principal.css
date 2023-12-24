@@ -2,9 +2,13 @@
 	margin:0;
 }
 
+body{
+	background-color: #CED4DA;
+}
+
 #entete{
 	border:	0.2vw solid blue;
-	background-color:white;
+	background-color: #ADB5BD;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -37,6 +41,7 @@ header li{
 	font-size:1vw;
 	margin-top: 1.5vw;
 	margin-bottom:1.5vw;
+	margin-right: 1vw;
 	display: flex;
 	float: right;
 }
@@ -60,22 +65,15 @@ header li{
 
 
 
-
-#Accueil #titre{
-	margin-top:20vw;
-	font-size:5vw;
-	text-align:center
-}
-
 #Accueil #presentation{
 	margin-top:5vw;
 	margin-bottom:5vw;
 }
 
 #Accueil #pdp{
+	margin-top:5vw;
 	width:20vw;
 	margin-left: 40vw;
-	margin-top: 20vw;
 }
 
 #Accueil #nom{
@@ -94,13 +92,13 @@ header li{
 
 .titre{
 	margin-top: 5vw;
-	margin-left: 10vw;
+	margin-left: 12vw;
 	font-size:3vw;
 }
 
 #APropos #presentation{
-	margin-top:5vw;
-	margin-bottom:5vw;
+	margin-top:2vw;
+	margin-bottom:2vw;
 }
 
 #APropos #pdp{
@@ -127,21 +125,34 @@ header li{
 .resultat{
 	font-size: 1.5vw;
 	margin-top: 1vw;
-	margin-left: 25vw;
+	margin-left: 30vw;
 }
 
+
+
+#competence #etoile {
+	padding: 1vw;
+}
+
+#etoile0,#etoile1,#etoile2,#etoile3,#etoile4
+ {
+display:inline;
+float: left;
+width:2vw;
+text-align:center;
+}
 
 
 
 #experience #titreCV{
 	margin-top: 3vw;
-	margin-left: 13vw;
+	margin-left: 20vw;
 	font-size:2vw;
 }
 
 #experience #cv{
 	font-size: 1.5vw;
-	margin-left: 20vw;
+	margin-left: 30vw;
 	margin-top: 2vw;
 	color:blueviolet;
 }
@@ -160,7 +171,7 @@ header li{
 }
 
 #contact #boxMail{
-	border: 0.2vw solid black;
+	border: 0.2vw solid rgb(53, 0, 0);
 	border-radius: 1vw;
 	display: flex;
 	justify-content: center;
@@ -202,6 +213,7 @@ footer{
 	margin-bottom: 1vw;
 	border-top:	0.2vw solid blue;
 	border-bottom:	0.2vw solid blue;
+	background-color: #ADB5BD;
 }
 
 footer h1{
@@ -222,6 +234,107 @@ footer p{
 
 footer #carte{
 	margin-left: 60vw;
-	margin-top: -6vw;
+	margin-top: -7vw;
 	margin-bottom: 0.5vw;
 }
+
+
+
+
+
+@media only screen and (max-width: 980px) {
+
+
+	#RS{
+		margin-left: 1vw;
+		margin-top: 1.5vw;
+		margin-bottom:1.5vw;
+		font-size: 5vw;
+	}
+		
+	#RS li{
+		margin: 2vw;
+	}
+	
+	#RS label{
+		font-size: 3vw;
+		margin: 2vw;
+	}
+
+	#Page{
+		font-size:3.5vw;
+		margin-top: 1.5vw;
+		margin-bottom:1.5vw;
+		margin-right: 1vw;
+	}
+	
+	#Page li i {
+		padding:0.5vw;
+		font-size:4.5vw
+	}
+	
+
+	
+	
+	#Accueil #pdp{
+		margin-top:10vw;
+		width:40vw;
+		margin-left: 30vw;
+	}
+
+
+
+	.titre{
+		margin-top: 20vw;
+		margin-left: 8vw;
+		font-size:4vw;
+	}
+
+
+	#APropos #pdp{
+		width:35vw;
+		margin-left:30vw;
+	}
+
+	#APropos #accroche{
+		margin-left:11vw;
+		margin-top:2vw;
+	}
+	
+	#APropos #texte{
+		font-size: 1.2vw;
+		margin-left:15vw;
+		margin-top:5vw;
+		margin-right: 15vw;
+	}
+	
+	#APropos #accroche{
+		font-size: 1.3vw;
+		margin-left:11vw;
+		margin-top:1vw;
+	}
+	
+
+
+	footer h1{
+		font-size: 2vw;
+		margin-left: 5vw;
+		margin-top: 4vw;
+	}
+	
+	footer p{
+		font-size: 1.2vw;
+		margin-left: 10vw;
+		margin-top: 0vw;
+	}
+	
+	footer #carte{
+		margin-left: 55vw;
+		margin-top: -20vw;
+		margin-bottom: 1.5vw;
+	}
+	
+
+}
+
+

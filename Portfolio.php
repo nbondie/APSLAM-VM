@@ -1,8 +1,7 @@
 <?php
+require_once("yaml/yaml.php");
 $data=yaml_parse_file('donnée.yaml');
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -12,9 +11,9 @@ $data=yaml_parse_file('donnée.yaml');
 <header>
 	<div id='entete'>
 		<div id='RS'>
-			<li><i class="fa-brands fa-linkedin"></i><label>Noé Bondie Houette</label></li>
-			<li><i class="fa-brands fa-facebook"></i></i><label>NoéBondieHouette</label></li>
-			<li><i class="fa-brands fa-github"></i><label>nbondie</label></li>
+			<li><i class="fa-brands fa-linkedin"></i><label><?php echo $data["Linkdin"] ?></label></li>
+			<li><i class="fa-brands fa-facebook"></i></i><label><?php echo $data["Facebook"] ?></label></li>
+			<li><i class="fa-brands fa-github"></i><label><?php echo $data["GitHub"] ?></label></li>
 		</div>
 		<div id='Page'>
 			<li><a href='#Accueil'><i class="fa-solid fa-magnifying-glass"></i>Accueil</a></li>
@@ -25,8 +24,8 @@ $data=yaml_parse_file('donnée.yaml');
 			<li><a href='#Contact'><i class="fa-solid fa-phone"></i>Contact</a></li>
 		</div>	
 	</div>
-	
 </header>
+
 <body>
 <h1 id="Accueil"></h1>
 <?php echo "<br><br>";	
@@ -49,10 +48,10 @@ $data=yaml_parse_file('donnée.yaml');
 	include 'Formation.php'; ?>
 
 <h1 id="Contact"></h1>
-<?php echo "<br><br>";
-	include 'Contact.php'; ?>
+<?php echo "<br><br>"; ?>
 
 </body>
+
 <footer>
     <h1>Me contacter :</h1>
     <li><?php echo "<p>".$data["NumTel"]."</p>\n"; ?></li>
