@@ -344,8 +344,8 @@ footer #carte{
 
 	#contact #box{
 		margin-top: 5vw;
-		margin-left: 25vw;
-		margin-right: 25vw;
+		margin-left: 10vw;
+		margin-right: 10vw;
 		margin-bottom: 5vw;
 		padding: 2vw;
 		background-color: blueviolet;
@@ -368,7 +368,7 @@ footer #carte{
 		margin-right: 1vw;
 		margin-left: 1vw;
 		width: 40vw;
-		height: 1vw;
+		height: 2vw;
 		max-width: 40vw;
 	}
 	
