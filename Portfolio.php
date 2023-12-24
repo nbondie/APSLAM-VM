@@ -1,5 +1,4 @@
 <?php
-require_once("yaml/yaml.php");
 $data=yaml_parse_file('donnée.yaml');
 ?>
 
@@ -48,7 +47,8 @@ $data=yaml_parse_file('donnée.yaml');
 	include 'Formation.php'; ?>
 
 <h1 id="Contact"></h1>
-<?php echo "<br><br>"; ?>
+<?php echo "<br><br>"; 
+	include 'Contact.php'; ?>
 
 </body>
 
