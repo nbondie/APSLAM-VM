@@ -351,16 +351,7 @@ footer #carte{
 		background-color: blueviolet;
 		border-radius: 2vw;
 	}
-	
-	#contact #boxMail{
-		border: 0.2vw solid rgb(53, 0, 0);
-		border-radius: 1vw;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 2vw;
-	}
-	
+
 	#contact .entrer{
 		border-radius: 0.5vw;
 		padding: 1vw;
@@ -376,21 +367,6 @@ footer #carte{
 		font-size: 3vw;
 	}
 	
-	#contact #boutton{
-		border-radius: 0.5vw;
-		margin: 0.5vw;
-		padding: 1vw;
-		width: 20vw;
-	}
-	
-	#contact #g-recaptcha{
-		text-align: center;
-		height: 120%;
-		width: 120%;
-	}
-	
-
-
 }
 
 
