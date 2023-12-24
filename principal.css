@@ -335,6 +335,60 @@ footer #carte{
 	}
 	
 
+
+
+
+
+
+
+
+	#contact #box{
+		margin-top: 5vw;
+		margin-left: 25vw;
+		margin-right: 25vw;
+		margin-bottom: 5vw;
+		padding: 2vw;
+		background-color: blueviolet;
+		border-radius: 2vw;
+	}
+	
+	#contact #boxMail{
+		border: 0.2vw solid rgb(53, 0, 0);
+		border-radius: 1vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2vw;
+	}
+	
+	#contact .entrer{
+		border-radius: 0.5vw;
+		padding: 1vw;
+		margin: 0.5vw;
+		margin-right: 1vw;
+		margin-left: 1vw;
+		width: 20vw;
+		height: 1vw;
+		max-width: 20vw;
+	}
+	
+	#contact h3{
+		font-size: 1.5vw;
+	}
+	
+	#contact #boutton{
+		border-radius: 0.5vw;
+		margin: 0.5vw;
+		padding: 1vw;
+		width: 20vw;
+	}
+	
+	#contact #g-recaptcha{
+		text-align: center;
+	}
+	
+
+
 }
 
 
