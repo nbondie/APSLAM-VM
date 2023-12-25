@@ -193,6 +193,7 @@ text-align:center;
 	width: 28vw;
 	height: 1.5vw;
 	max-width: 28vw;
+	display: block;
 }
 
 #contact h3{
