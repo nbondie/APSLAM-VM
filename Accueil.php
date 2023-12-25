@@ -6,6 +6,7 @@ $data=yaml_parse_file('donnée.yaml');
 <html lang="fr">
 <link rel="stylesheet" href="principal.css">
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
+<title>Accueil</title>
 <body>
 	<div id="Accueil">
 		<div id='presentation'>

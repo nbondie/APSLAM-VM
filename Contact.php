@@ -8,6 +8,7 @@ $captcha="Fail" ;
 <html lang="fr">
 <link rel="stylesheet" href="principal.css">
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
+<title>Contact</title>
 <body>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
