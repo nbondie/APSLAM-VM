@@ -1,5 +1,5 @@
 <?php
-$data=yaml_parse_file('../Yaml/donnée.yaml');
+$data=yaml_parse_file('donnée.yaml');
 ?>
 
 <!DOCTYPE html>
@@ -7,13 +7,13 @@ $data=yaml_parse_file('../Yaml/donnée.yaml');
 <link rel="stylesheet" href="principal.css">
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
 <body>
-	<div id="APropos">
-		<h1 class='titre'>A Propos de moi :</h1>
+	<div id="Accueil">
 		<div id='presentation'>
 			<img id='pdp' src='<?php echo $data["pdp"] ?>'> 
-			<p id='accroche'><?php echo $data["AccrocheAPropos"] ?></p>	
-			<p id='texte'><?php echo $data["APropos"] ?></p>
+			<h2 id='nom'><?php echo $data["Nom"] ?></h2>
+			<p id='accroche'><?php echo $data["AccrocheAccueil"] ?></p>
 		</div> 
 	</div>
 </body>
 </html>
+

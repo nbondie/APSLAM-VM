@@ -1,5 +1,5 @@
 <?php
-$data=yaml_parse_file('../Yaml/donnée.yaml');
+$data=yaml_parse_file('donnée.yaml');
 $res="Envoyer un Mail";
 $captcha="Fail" ;
 ?>
@@ -32,6 +32,9 @@ if(isset($_POST['OK'])){
 
 <?php
 include_once '/usr/share/php/Symfony/Contracts/Service/autoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 
 require "/var/www/vendor/phpmailer/phpmailer/src/Exception.php";
 require "/var/www/vendor/phpmailer/phpmailer/src/PHPMailer.php";

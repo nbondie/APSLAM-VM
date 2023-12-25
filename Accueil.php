@@ -1,5 +1,5 @@
 <?php
-$data=yaml_parse_file('donnée.yaml');
+$data=yaml_parse_file('../Yaml/donnée.yaml');
 ?>
 
 <!DOCTYPE html>
