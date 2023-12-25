@@ -21,7 +21,7 @@ body{
 	margin-bottom:1.5vw;
 	display: flex;
 	float: left;
-	font-size: 1.5vw;
+	font-size: 1.2vw;
 }
 	
 #RS li{
@@ -29,7 +29,7 @@ body{
 }
 
 #RS label{
-	font-size: 1.5vw;
+	font-size: 1.2vw;
 	margin: 0.25vw;
 }
 
@@ -38,7 +38,7 @@ header li{
 }
 
 #Page{
-	font-size:1.5vw;
+	font-size:1.2vw;
 	margin-top: 1.5vw;
 	margin-bottom:1.5vw;
 	margin-right: 1vw;
@@ -64,7 +64,7 @@ header li{
 
 #Page li i {
 	padding:0.5vw;
-	font-size:1.5vw
+	font-size:1.2vw
 }
 
 
