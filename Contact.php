@@ -78,13 +78,13 @@ if(!empty($_POST)) {
     <div id='boxMail'>
         <form action="#Contact" method="post">
             <h3>Votre Nom :</h3>
-            <input class='entrer' type="text" name="from"><br>
+            <input class='entrer' required="required" type="text" name="from"><br>
             <h3>Votre adresse mail :</h3>
-            <input class='entrer' type="text" name="to" value="..........@gmail.com"><br>
+            <input class='entrer' required="required" type="text" name="to" value="..........@gmail.com"><br>
             <h3>Le sujet du mail :</h3>
-            <input class='entrer' type="text" name="subject" placeholder="Sujet"><br>
+            <input class='entrer' required="required" type="text" name="subject" placeholder="Sujet"><br>
             <h3>Le contenu :</h3>
-            <textarea class='entrer' name="body"></textarea><br>
+            <textarea class='entrer' required="required" name="body"></textarea><br>
             <form method='POST'>
                 <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
                 <button id='boutton' name='OK' type='submit'> <?php echo $res ?></button>
