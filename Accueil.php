@@ -9,7 +9,7 @@ $data=yaml_parse_file('donnée.yaml');
 <body>
 	<div id="Accueil">
 		<div id='presentation'>
-			<img id='pdp' src='pdp.jpg'> 
+			<img id='pdp' src='<?php echo $data["pdp"] ?>'> 
 			<h2 id='nom'><?php echo $data["Nom"] ?></h2>
 			<p id='accroche'><?php echo $data["AccrocheAccueil"] ?></p>
 		</div> 
