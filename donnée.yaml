@@ -49,7 +49,7 @@ Compétence:
 
    - domaine: 'Réseau'
      item:
-         - nom: 'Création d'un LAMP'
+         - nom: "Création d'un LAMP"
            score: ''
            lvl: '3'
   
