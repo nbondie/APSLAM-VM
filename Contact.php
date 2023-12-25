@@ -6,7 +6,7 @@ $captcha="Fail" ;
 
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="principal.css">
+<link rel="stylesheet" href="../Css/principal.css">
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
 <body>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>

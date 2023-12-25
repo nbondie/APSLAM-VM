@@ -4,7 +4,7 @@ $data=yaml_parse_file('../Yaml/donnée.yaml');
 
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="principal.css">
+<link rel="stylesheet" href="../Css/principal.css">
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
 <title>Portfolio Noé Bondie Houette</title>
 <header>
