@@ -201,9 +201,8 @@ text-align:center;
 
 #contact #boutton{
 	width: 20vw;
-
 	border: 0;
-	border-radius: 0.5;
+	border-radius: 0.5vw;
 	padding: 1vw;
 	margin: 0 auto;
 	display: block;
