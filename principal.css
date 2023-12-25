@@ -7,7 +7,7 @@ body{
 }
 
 #entete{
-	border:	0.2vw solid blue;
+	border:	0.2vw solid #212121;
 	background-color: #616161;
 	position: fixed;
 	top: 0;
@@ -166,7 +166,7 @@ text-align:center;
 	margin-left: 30vw;
 	margin-right: 30vw;
 	margin-bottom: 5vw;
-	padding: 1.5vw;
+	padding: 1vw;
 	background-color: #616161;
 	border-radius: 2vw;
 }
@@ -200,9 +200,6 @@ text-align:center;
 	margin: 0.5vw;
 	padding: 1vw;
 	width: 20vw;
-	height: 1.5vw;
-	margin-right: 2vw;
-	margin-left: 2vw;
 }
 
 #contact #g-recaptcha{
@@ -215,8 +212,8 @@ text-align:center;
 footer{
 	margin-top: 10vw;
 	margin-bottom: 1vw;
-	border-top:	0.2vw solid blue;
-	border-bottom:	0.2vw solid blue;
+	border-top:	0.2vw solid #212121;
+	border-bottom:	0.2vw solid #212121;
 	background-color: #616161;
 }
 
