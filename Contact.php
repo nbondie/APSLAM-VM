@@ -80,7 +80,7 @@ if(!empty($_POST)) {
             <h3>Votre Nom :</h3>
             <input class='entrer' required="required" type="text" name="from"><br>
             <h3>Votre adresse mail :</h3>
-            <input class='entrer' required="required" type="text" name="to" value="..........@gmail.com"><br>
+            <input class='entrer' required="required" type="mail" name="to" value="..........@gmail.com"><br>
             <h3>Le sujet du mail :</h3>
             <input class='entrer' required="required" type="text" name="subject" placeholder="Sujet"><br>
             <h3>Le contenu :</h3>
