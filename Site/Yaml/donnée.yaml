@@ -6,7 +6,7 @@ Experience:
       lieu: 'Hérouville-Saint-Clair'
       tâche: 'Observer comment fonctionne le travaille en usine et en général.'
     
-      cv: 'NoéBondieHouette_CV.pdf'
+      cv: '../PDF/NoéBondieHouette_CV.pdf'
 
 Formation:
     - diplome: 'Collège'
@@ -80,7 +80,7 @@ GitHub : 'nbondie'
 
 Nom : 'Noé Bondie Houette'
 
-pdp :  'pdp.PNG'
+pdp :  '../Images/pdp.PNG'
 
 AccrocheAccueil: 'Dans le code et les astuces, Bondie éblouit et séduit.'
 AccrocheAPropos: 'Dans le royaume du digital, Houette crée sans défaite.'
