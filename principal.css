@@ -46,9 +46,10 @@ header li{
 	float: right;
 }
 
-#Page li a::before{
-	color: antiquewhite;
+#Page li a{
+	color:white;
 }
+
 
 #Page li a:hover{
 	color: #E0E0E0;
