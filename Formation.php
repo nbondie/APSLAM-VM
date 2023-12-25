@@ -6,7 +6,6 @@ $data=yaml_parse_file('donnée.yaml');
 <html lang="fr">
 <link rel="stylesheet" href="principal.css">
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
-<title>Formation</title>
 <body>
 	<div id='formation'>
 		<h1 class='titre'>Mes Formations :</h1>
