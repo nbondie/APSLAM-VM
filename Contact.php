@@ -89,6 +89,7 @@ if(!empty($_POST)) {
                 <div class='g-recaptcha' data-sitekey='6Ld-9zcpAAAAAP7zHh8zvIy-mwDj4rdg2WeWB09d'></div><br/>
                 <button id='boutton' name='OK' type='submit'> <?php echo $res ?></button>
             </form>
+            <p>Vos données ne seront pas conservés.</p>
         </form>
     </div>
 </div>
