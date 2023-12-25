@@ -166,7 +166,7 @@ text-align:center;
 	margin-left: 30vw;
 	margin-right: 30vw;
 	margin-bottom: 5vw;
-	padding: 1vw;
+	padding: 1.5vw;
 	background-color: #616161;
 	border-radius: 2vw;
 }
@@ -200,6 +200,9 @@ text-align:center;
 	margin: 0.5vw;
 	padding: 1vw;
 	width: 20vw;
+	height: 1.5vw;
+	margin-right: 2vw;
+	margin-left: 2vw;
 }
 
 #contact #g-recaptcha{
