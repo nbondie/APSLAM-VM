@@ -1,12 +1,12 @@
 <?php
-$data=yaml_parse_file('donnée.yaml');
+$data=yaml_parse_file('../Yaml/donnée.yaml');
 $res="Envoyer un Mail";
 $captcha="Fail" ;
 ?>
 
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="stylesheet" href="principal.css">
+<link rel="stylesheet" href="../Css/principal.css">
 <script src="https://kit.fontawesome.com/7ca312f99b.js" crossorigin="anonymous"></script>
 <body>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -32,9 +32,6 @@ if(isset($_POST['OK'])){
 
 <?php
 include_once '/usr/share/php/Symfony/Contracts/Service/autoload.php';
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 
 require "/var/www/vendor/phpmailer/phpmailer/src/Exception.php";
 require "/var/www/vendor/phpmailer/phpmailer/src/PHPMailer.php";
