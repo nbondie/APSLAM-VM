@@ -200,17 +200,12 @@ text-align:center;
 }
 
 #contact #boutton{
-	align-items: center;
 	border-radius: 0.5vw;
-	margin-left: 10vw;
 	margin: 0.5vw;
 	padding: 1vw;
 	width: 20vw;
 }
 
-#contact #g-recaptcha{
-	text-align: center;
-}
 
 #contact p{
 	opacity: 0.4;
