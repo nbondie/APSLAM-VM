@@ -208,6 +208,15 @@ text-align:center;
 	display: block;
 }
 
+#contact .g-recaptcha{
+	width: 20vw;
+	border: 0;
+	border-radius: 0.5vw;
+	padding: 1vw;
+	margin: 0 auto;
+	display: block;
+}
+
 
 #contact p{
 	opacity: 0.3;
