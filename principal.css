@@ -185,14 +185,11 @@ text-align:center;
 }
 
 #contact .entrer{
+	width: 20vw;
+	border: 0;
 	border-radius: 0.5vw;
 	padding: 1vw;
-	margin: 0.5vw;
-	margin-right: 1vw;
-	margin-left: 1vw;
-	width: 28vw;
-	height: 1.5vw;
-	max-width: 28vw;
+	margin: 0 auto;
 	display: block;
 }
 
