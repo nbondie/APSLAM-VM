@@ -254,7 +254,7 @@ footer #carte{
 		margin-left: 1vw;
 		margin-top: 1.5vw;
 		margin-bottom:1.5vw;
-		font-size: 5vw;
+		font-size: 4vw;
 	}
 		
 	#RS li{
@@ -262,12 +262,12 @@ footer #carte{
 	}
 	
 	#RS label{
-		font-size: 3vw;
+		font-size: 2.5vw;
 		margin: 2vw;
 	}
 
 	#Page{
-		font-size:3.5vw;
+		font-size:3vw;
 		margin-top: 1.5vw;
 		margin-bottom:1.5vw;
 		margin-right: 1vw;
@@ -275,7 +275,7 @@ footer #carte{
 	
 	#Page li i {
 		padding:0.5vw;
-		font-size:4.5vw
+		font-size:4vw
 	}
 	
 
