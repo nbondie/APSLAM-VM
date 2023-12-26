@@ -149,13 +149,13 @@ text-align:center;
 
 
 
-#experience #titreCV{
+.titreCV{
 	margin-top: 3vw;
 	margin-left: 20vw;
 	font-size:2vw;
 }
 
-#experience #cv{
+.cv{
 	font-size: 1.5vw;
 	margin-left: 30vw;
 	margin-top: 2vw;

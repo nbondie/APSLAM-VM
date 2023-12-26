@@ -31,8 +31,8 @@ $data=yaml_parse_file('../Yaml/donnée.yaml');
 				</ul>
 			</div>
 		</div>
-		<h1 id='titreCV'>Mon CV :</h1>
-		<?php echo "<a id='cv' href=".$cv.">Mon curriculum vitae</a>"; ?>
+		<h1 class='titreCV'>Mon CV :</h1>
+		<?php echo "<a class='cv' href=".$cv.">Mon curriculum vitae</a>"; ?>
 	</div>
 </body>
 </html>
