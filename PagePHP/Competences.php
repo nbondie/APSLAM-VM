@@ -20,7 +20,7 @@ $data=yaml_parse_file('../Yaml/donnée.yaml');
 							<?php
 								foreach($uneCompétence["item"] AS $unItem){
 									?>
-										<li><?=$unItem["nom"]?></li>
+										<B><li><?=$unItem["nom"]?></li></B>
 										<?php
 											if ($unItem['score'] != ""){
 												?><li><?=$unItem["score"]?></li><?php
