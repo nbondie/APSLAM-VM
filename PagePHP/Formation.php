@@ -14,7 +14,7 @@ $data=yaml_parse_file('../Yaml/donnée.yaml');
 				<?php
 					foreach($data["Formation"] AS $uneFormation){
 						?>
-						<li><?=ucfirst($uneFormation["diplome"])?>
+						<B><li><?=ucfirst($uneFormation["diplome"])?></B>
 							<ul>
 								<li><?=$uneFormation["etablissement"]?></li>
 								<li><?=$uneFormation["lieux"]?></li>
