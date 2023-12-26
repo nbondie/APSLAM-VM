@@ -20,10 +20,14 @@ Compétence:
          - nom: 'html'
            score: ''
            lvl: '4'
+
+         - nom: 'PHP'
+           score: ''
+           lvl: '3'
       
          - nom: 'css'
            score: ''
-           lvl: '5'
+           lvl: '3'
         
          - nom: 'python'
            score: ''
