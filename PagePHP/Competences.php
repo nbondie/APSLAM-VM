@@ -33,7 +33,6 @@ $data=yaml_parse_file('../Yaml/donnée.yaml');
 
 											$star="<i class='fa-solid fa-star'></i>";         //Icon d'étoile pleines
 											$star2="<i class='fa-regular fa-star'></i>";      //Icon d'étoile vide
-											//$nv=0;                
 											$tot=0;
 											while ($lvl >0) {           	//boucle qui va afficher le niveau de compétence avec des étoile pleines						      
 												echo "<div id='etoile".$tot."' >".$star."</div>";
