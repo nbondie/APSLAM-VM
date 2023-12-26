@@ -15,12 +15,12 @@ $data=yaml_parse_file('../Yaml/donnée.yaml');
 				<?php
 					foreach($data["Compétence"] AS $uneCompétence){
 						?>
-						<U><li><?=ucfirst($uneCompétence["domaine"])?> :</U>
+						<B><U><li><?=ucfirst($uneCompétence["domaine"])?> :</U></B>
 							<ul>
 							<?php
 								foreach($uneCompétence["item"] AS $unItem){
 									?>
-										<B><li><?=$unItem["nom"]?></li></B>
+										<li><?=$unItem["nom"]?></li>
 										<?php
 											if ($unItem['score'] != ""){
 												?><li><?=$unItem["score"]?></li><?php
