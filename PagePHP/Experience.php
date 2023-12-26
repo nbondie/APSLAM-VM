@@ -15,7 +15,7 @@ $data=yaml_parse_file('../Yaml/donnée.yaml');
 				<?php
 					foreach($data["Experience"] AS $uneExperience){
 						?>
-						<li><?=ucfirst($uneExperience["entreprise"])?>
+						<B><li><?=ucfirst($uneExperience["entreprise"])?></B>
 							<ul>
 								<li><?=$uneExperience["poste"]?></li>
 								<li><?=$uneExperience["date-début"]?></li>
