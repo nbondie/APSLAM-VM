@@ -28,7 +28,7 @@ $data=yaml_parse_file('../Yaml/donnée.yaml');    //récupération sous forme de
 <body>
 <h1 id="Accueil"></h1>   <!-- balise qui sert a faire en sorte que les liens vers les pages soit juste avant leurs affichages-->
 <?php echo "<br><br>";	     //les br servent à faire en sorte que tout soit espacer et pas tout coller ensemble 
-	include 'Accueil.php'; ?>      <!-- appel de la page Accueil.php pour la faire afficher sur la page principal -->
+	include 'Accueill.php'; ?>      <!-- appel de la page Accueil.php pour la faire afficher sur la page principal -->
 
 <h1 id="APropos"></h1>
 <?php echo "<br><br>";
